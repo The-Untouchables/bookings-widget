@@ -5,10 +5,11 @@ import ReactStarRating from 'react-star-rating-component';
 var StarRating = (props) => (
 
   <ReactStarRating 
+  	className='star-rating'
     editing={false}
-    emptyStarColor="#E3E3E3"
+    emptyStarColor="#767676"
     name="rating"
-    starColor="#238A88"
+    starColor="#007a87"
     starCount={5}
     value={props.rating}
   />
