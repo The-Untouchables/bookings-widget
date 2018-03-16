@@ -10,8 +10,11 @@
   "scripts": {
     "test": "jest",
     "start": "node database/seed.js & node server/index.js",
+    "server": "nodemon server/index.js",
     "react-dev": "webpack -d --watch",
-    "seed-database": "node database/seed.js"
+    "seed-database": "node database/seed.js",
+    "localtest": "npm run react-dev && npm run server",
+    "writefiles": "node seedData/writeRecords.js"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
@@ -32,8 +35,10 @@
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "faker": "^4.1.0",
     "jquery": "^3.3.1",
     "js-beautify": "^1.7.5",
+    "json2csv": "^4.0.2",
     "mongoose": "^5.0.7",
     "morgan": "^1.9.0",
     "nodemon": "^1.17.1",
